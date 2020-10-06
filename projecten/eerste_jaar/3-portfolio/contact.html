@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<header>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contactformulier site">
+        <meta name="author" content="Emre Taskopru">
+	    <link rel="stylesheet" type="text/css" href="style.css"/>
+	    <title> Portfolio | contact </title>
+	</header>
+
+
+<div class="website-wrapper">
+	<body>
+
+		<div class="header">
+
+			<a class="logo" href="index.html"><img class="logo" src="img/wdp-logo-cropped.png"></a>
+			<a class="title" href="contact.html"><h1>Portfolio | Contact</h1></a>
+		</div>
+
+		<div id="navbar">
+
+			<ul>
+	     		<li><a href="index.html">Home</a></li>
+	     		<li><a href="overmij.html">Over mij</a></li>
+	     		<li><a href="projecten.html">Projecten</a></li>
+	     		<li><a href="onlinecv.html">Online CV</a></li>
+	     		<li><a href="contact.html" class="active">Contact</a></li>
+	     	</ul>
+
+		</div>
+
+		<div class="contact-container">			
+			<div id="contact_formulier">
+				<h2>Contact formulier</h2>
+				<label for="fname">Voornaam:*</label> <br>
+				<input class="inputveld" type="text" id="fname" name="firstname" placeholder="Je voornaam...">
+				<br><br>
+
+				<label for="lname">Achternaam:*</label> <br>
+					<input class="inputveld" type="text" id="lname" name="lastname" placeholder="Je achternaam...">
+					<br><br>
+
+				<form action="mailto:emre.taskopru@student.rocva.nl">	
+						<label for="Onderwerp">Onderwerp:*</label> <br>
+						<input class="inputveld" id="onderwerp" name="Onderwerp" placeholder="Waar ga je het over hebben...">
+						<br><br>
+
+					<label for="subject">Beschrijving:*</label><br>
+					<textarea id="beschrijving"  name="beschrijving" placeholder="Beschrijf je probleem/vraag..."></textarea>
+					<br><br>
+					<input type="submit" value="Submit">
+				</form>
+
+			</div>
+
+			<img class="contact-foto" src="img/helpdesk.jpg">
+		</div>
+	</body>
+
+		<footer>
+
+	    	<p>&copy; 2018 WDP | Portfolio. All Rights Reserved. </p>
+	    	<a href="contact.html" target="_blank">Heeft u een probleem? Klik dan hier om contact op te nemen.</a>
+	    	<div class="social-container">
+	    		<a class="social-media" href="https://nl.linkedin.com/" target="_blank"><img class="social-media" src="img/linkedinicon.jpg" alt="Mijn LinkedIn"></a>
+	    		<a class="social-media" href="https://twitter.com/E_Taskopru?lang=nl" target="_blank"><img class="social-media" src="img/twittericon.png" alt="Mijn twitter"></a>
+	    		<a class="social-media" href="contact.html" target="_blank"><img class="social-media" src="img/mailicon.jpg" alt="Mail"></a>
+	    	</div>
+		</footer>
+</div>
+</html>

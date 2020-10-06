@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="shortcut icon" href="img/bwlogo.png">
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Spellen pagina">
+        <meta name="author" content="Emre Taskopru,Mustafa Cansever,Talha Andac">
+	    <link rel="stylesheet" type="text/css" href="make10.css"/>
+
+		<title>Brain Wars | Spellen</title>
+	</head>
+	<body>
+		<div class="header">	
+			<a class="logo" href="index.html"><img class="logo" src="img/bwlogo.png"></a>
+			<a class="title" href="index.html"><h1>Brain Wars | Spellen</h1></a>
+		</div>
+
+			<div id="navbar">
+				<div class="broodkruimel"><a href="index.html">Spellen</a>/Make 10</div>
+			</div>
+
+
+<center>
+
+        <div id="content">
+            <table border="1" id="spelbord">
+
+                <tbody>
+                    <tr>
+                        <td class="normal" id="cell00">&nbsp;</td>
+                        <td class="normal" id="cell01">&nbsp;</td>
+                        <td class="normal" id="cell02">&nbsp;</td>
+                        <!-- <td class="normal" id="cell03">&nbsp;</td> -->
+                    </tr>
+                    <tr>
+                        <td class="normal" id="cell10">&nbsp;</td>
+                        <td class="normal" id="cell11">&nbsp;</td>
+                        <td class="normal" id="cell12">&nbsp;</td>
+                        <!-- <td class="normal" id="cell13">&nbsp;</td> -->
+                    </tr>
+                    <tr>
+                        <td class="normal" id="cell20">&nbsp;</td>
+                        <td class="normal" id="cell21">&nbsp;</td>
+                        <td class="normal" id="cell22">&nbsp;</td>
+                        <!-- <td class="normal" id="cell23">&nbsp;</td> -->
+                    </tr>
+                    <tr>
+                        <td class="normal" id="cell30">&nbsp;</td>
+                        <td class="normal" id="cell31">&nbsp;</td>
+                        <td class="normal" id="cell32">&nbsp;</td>
+                        <!-- <td class="normal" id="cell33">&nbsp;</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <input id="btn" type="button" value="Verander nummers" />
+
+</center>
+	
+	<script>
+		var btn = document.getElementById('btn');
+
+		btn.addEventListener('click', UpdateTable);
+
+
+		// Set the max length of random number 
+		// and the max length
+		var maxLength = 3;
+
+		// Returns a random number
+		function CreateLottoValues() {
+ 		return Math.floor(Math.random() * 8 );
+		}
+
+		//create table
+		function UpdateTable() {
+
+		for (var i = 0; i < maxLength; i++) {
+        for (var j = 0; j < maxLength; j++) {
+            tmp = 'cell' + i + j;
+            document.getElementById(tmp).innerHTML = CreateLottoValues();
+        }
+    }
+}
+
+		UpdateTable();
+
+	</script>
+		
+	</body>
+		<footer>
+	    	<p>&copy; 2019 Brain Wars | All Rights Reserved. </p>
+	    	<a href="contact.html" target="_blank">Heeft u een probleem? Klik dan hier om contact op te nemen.</a>
+	    	<div class="social-container">
+	    		<a class="social-media" href="https://www.facebook.com/brainwars/" target="_blank"><img class="social-media" src="img/fb-icon.png" alt="Facebook"></a>
+
+	    		<a class="social-media" href="https://twitter.com/" target="_blank"><img class="social-media" src="img/twitter-icon.png" alt="Twitter"></a>
+	    		
+	    		<a class="social-media" href="https://www.instagram.com/?hl=nl" target="_blank"><img class="social-media" src="img/insta-icon.png" alt="Instagram"></a>
+	    	</div>
+		</footer>
+
+
+</html>

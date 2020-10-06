@@ -1,0 +1,192 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	background-color: white;
+	font-family:Arial;
+	font-size: 16px;
+	min-width:100%;
+}
+.website-wrapper {
+	width:95%;
+    margin:0 auto;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color:#0191FB;
+}
+/*================HEADER==================*/
+.header {
+	background-color: #f2f2f2;
+	height: 150px;
+	right: 0;
+	left: 0;
+	top: 0;
+	font-family: Arial;
+	margin: 10px;
+	border-radius: 5px;
+	border-style: outset;
+	clear: both;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+}
+h1 {
+	color:#0191FB;
+	font-size: 320%;
+    text-shadow: 2px 2px lightgrey;
+    align-self: center;
+}
+.logo {
+	width:100px;
+	height:100px;
+	margin:10px;
+	float:left;
+}
+/*==============NAVBAR===============*/
+#navbar {
+	margin: 10px;
+	height: 45px;
+	position: static;
+	top: 110px;
+	clear: both;
+	border-bottom:4px solid black;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+	border-radius: 5px;
+	text-align: center;
+	border-style: outset;
+}
+#navbar li {
+	display: inline;
+	text-align: center;
+}
+
+#navbar li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+#navbar li a:hover {
+    background-color: #0084e2;
+    text-decoration:underline;
+}
+
+#navbar .active {
+    background-color: #0191FB;
+    font-weight:bold;
+}
+.nav-right {
+	float:right;
+}
+.active {
+    background-color: #0191FB;
+    font-weight:bold;
+}
+/*================BODY================*/
+.main {
+	background-color: #f2f2f2;
+	margin:10px;
+	position: static;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 110%;
+	display: inline-block;
+	border-style: outset;
+	overflow: ;
+	clear: right;
+	width:100%;
+	text-align:left;
+}
+/*===============FOOTER===============*/
+footer {
+background-color: #f2f2f2;
+color: black;
+height: 100px;
+position: relative;
+bottom: 0px;
+font-family: arial;
+margin: 10px;
+border-radius: 5px;
+border-style: outset;
+clear: both;
+font-size: 90%;
+padding: 15px;
+text-align: center;
+overflow:hidden;
+display:block;
+}	
+footer a {
+	color:#0191FB;
+}
+.social-media {
+	height:60px;
+	width:60px;
+	margin:5px;
+}
+.social-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+/*===============Contact==============*/
+#contact_formulier {
+	background-color: #f2f2f2;
+	width:60%;
+	margin:10px;
+	position: static;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 110%;
+	display: inline-block;
+	border-style: outset;
+	clear: both;
+	
+}
+#beschrijving {
+	height:200px;
+	width:100%;
+	border-radius:5px;
+	border-style:inset;
+	overflow:auto;
+	resize:none;
+	font-family:arial;
+
+}
+.inputveld {
+	width:40%;
+	border-radius:5px;
+	border-style:inset;
+}
+.contact-foto {
+	height:40%;
+	width:40%;
+	float:right;
+	border-radius:5px;
+	margin:10px;
+	border-style:outset;
+	transition: opacity 0.3s ease-in-out;
+
+}
+.contact-foto:hover {
+	opacity: 0.5;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    overflow:hidden;
+}
+
+/*_______________________________________________*/

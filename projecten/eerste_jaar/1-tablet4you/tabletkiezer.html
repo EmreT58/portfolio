@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<header>
+	
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tabletvergelijkings website">
+        <meta name="author" content="Emre Taskopru">
+	    <link rel="stylesheet" type="text/css" href="style.css"/>
+	    <title> Tablet4You | Tabletkiezer </title>
+
+	</header>
+
+
+	<div class="website-wrapper">
+
+		<body>
+
+			<div id="header-tabletkiezer">
+				
+				<img class="banner" src="banners/headerbanner-tabletkiezer.png" usemap="#banner">
+
+				<map name="banner">
+				    <area target="_self" alt="logo" title="Logo" href="index.html" coords="240,170,140,2" shape="rect">
+				    <area target="_self" alt="titel" title="Tabletkiezer" href="tabletkiezer.html" coords="323,41,1086,146" shape="rect">
+				</map>
+
+			</div>
+
+			<div id="navbar">
+
+				<ul>
+		     		<li><a href="index.html">Home</a></li>
+		     		<li><a href="tabletkiezer.html" class="active">Tabletkiezer</a></li>
+		     		<li><a href="overons.html">Over ons</a></li>
+		     		<li><a href="contact.html">Contact</a></li>
+		     	</ul>
+
+			</div>
+
+	        <div class="container">
+	            <content class="sidebar">
+	                    <ul class="filter-lists">
+	                        <li class="filter-type-lists">
+	                            <ul class="list-merken">
+	                                <label id="filter-type" >Merken</label><br>
+	                                <li>
+	                                    <input type="checkbox" id="filter-apple" name="apple" class="merken" onclick="toonSelectie()">
+	                                    <label for="filter-apple">Apple</label>
+	                                </li>
+	                                <br>
+	                                <li>
+	                                    <input type="checkbox" id="filter-microsoft" name="microsoft" class="merken" onclick="toonSelectie()">
+	                                    <label for="filter-microsoft">Microsoft</label>
+	                                </li>
+	                                <br>
+	                                <li>
+	                                    <input type="checkbox" id="filter-samsung" name="samsung" class="merken" onclick="toonSelectie()">
+	                                    <label for="filter-samsung">Samsung</label>
+	                                </li>
+	                                <br>
+	                                <li>
+	                                    <input type="checkbox" id="filter-lenovo" name="lenovo" class="merken" onclick="toonSelectie()">
+	                                    <label for="filter-lenovo">Lenovo</label>
+	                                </li>
+	                                <br>
+	                            </ul>
+	                        </li>
+	                        <li class="filter-type-lists">
+	                             <ul class="list-merken">
+	                                <label id="filter-type" >Kleur</label><br>
+	                                <li>
+	                                    <input type="checkbox" id="spacegrey" name="spacegrey" class="merken" onclick="toonSelectie()">
+	                                    <label for="spacegrey">Spacegrey</label>
+	                                </li>
+	                                <br>
+	                                <li>
+	                                    <input type="checkbox" id="zwart" name="zwart" class="merken" onclick="toonSelectie()">
+	                                    <label for="zwart">Zwart</label>
+	                                </li>
+	                                <br>
+	                                <li>
+	                                    <input type="checkbox" id="zilver" name="zilver" class="merken" onclick="toonSelectie()">
+	                                    <label for="zilver">Zilver</label>
+	                                </li>
+	                                <br>
+	                                 <li>
+	                                    <input type="checkbox" id="goud" name="goud" class="merken" onclick="toonSelectie()">
+	                                    <label for="goud">Goud</label>
+	                                </li>
+	                                <br>
+	                                 <li>
+	                                    <input type="checkbox" id="wit" name="wit" class="merken" onclick="toonSelectie()">
+	                                    <label for="wit">Wit</label>
+	                                </li>
+	                                <br>
+	                            </ul>
+	                        </li>
+
+	                        <li class="filter-type-lists">
+	                        	<ul class="list-merken">
+	                        		<label id="filter-type">Formaat</label>
+	                        		<br>
+	                        		<li>
+	                        			<input type="checkbox" id="wit" name="wit" class="merken" onclick="toonSelectie()">
+	                        			<label for="wit">10.1 inch</label>
+	                        		</li>
+	                        		<br>
+	                        		<li>
+	                        			<input type="checkbox" id="wit" name="wit" class="merken" onclick="toonSelectie()">
+	                        			<label for="wit">9.1 inch</label>
+	                        		</li>
+	                        	</ul>
+	                        </li>
+	                    </ul>
+
+	                    <!--<button onclick="toonSelectie()">Toon selectie</button>  IS NIET MEER NODIG IVM FUNCTIE AANROEP BIJ CHECKBOXES -->
+	            </content>
+	            <main class="main-content">
+
+	                <div class="product-row">
+	                    <div class="column">
+	                        <a id="imgLink1" href=#><img id="img1" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                    <div class="column">
+	                        <a id="imgLink2" href=#><img id="img2" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                    <div class="column">
+	                        <a id="imgLink3" href=#><img id="img3" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                    <div class="column">
+	                        <a id="imgLink4" href=#><img id="img4" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div><br>
+	                    <div class="column">
+	                        <a id="imgLink5" href=#><img id="img5" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                    <div class="column">
+	                        <a id="imgLink6" href=#><img id="img6" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                   <div class="column">
+	                        <a id="imgLink7" href=#><img id="img7" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                   <div class="column">
+	                        <a id="imgLink8" href=#><img id="img8" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div><br>
+	                   <div class="column">
+	                        <a id="imgLink9" href=#><img id="img9" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                   <div class="column">
+	                        <a id="imgLink10" href=#><img id="img10" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                   <div class="column">
+	                        <a id="imgLink11" href=#><img id="img11" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                   <div class="column">
+	                        <a id="imgLink6" href=#><img id="img6" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+
+	                </div>
+	                <div class="product-row">
+	                    <div class="column">
+	                    	<a id="imgLink6" href=#><img id="img6" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                    <div class="column">
+	                    	<a id="imgLink6" href=#><img id="img6" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                    <div class="column">
+	                    	<a id="imgLink6" href=#><img id="img6" src="" alt="plaatje van een tablet" class="product-image"></a>
+	                    </div>
+	                </div>
+	            </main>
+	        </div>    
+	            <script src="selectie.js"></script>
+		</body>
+
+		<footer>
+
+	    	<p>&copy; 2018 Tablet4You. All Rights Reserved. </p>
+	    	<a href="contact.html" target="_blank">Heeft u een probleem? Klik dan hier om contact op te nemen.</a>
+	    	
+		</footer>
+	</div>
+</html>

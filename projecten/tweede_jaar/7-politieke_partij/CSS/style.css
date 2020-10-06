@@ -1,0 +1,243 @@
+/* Mobile first/main versie */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	background: #eee;
+	height: auto;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 2.5rem; /* 1rem=16px (standaard) */
+	text-transform: uppercase;
+	margin:0;
+}
+h2 {
+	font-weight:400;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	margin: 0;
+}
+h3 {
+	color:#2c2749;
+}
+img {
+	display: block;
+	width: 100%;
+	transition: 500ms ease;
+	max-height: 650px;
+}
+img:hover {
+	opacity: 0.7;
+}
+
+main {
+	background-color: white;
+	max-width: 1250px;
+	margin: auto;
+	box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+	-30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+#landing {
+	background: #fff;
+}
+
+#landing-image {
+	background: url(https://source.unsplash.com/DurC25GdOvk);
+	display:flex;
+	flex: 0 1 100vw; /*flex grow, flexshrink, width in viewport-widths*/
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right:1rem;
+	padding-left:1rem;
+}
+
+#landing-image-inner {
+	border: 1px solid grey;
+	border-radius: 15px;
+	padding: 1rem;
+	background-color: white;
+}
+#landing-btn {
+	margin: 1rem;
+	background: white;
+}
+
+.btn {
+	padding: 0.5rem 2rem; /*1.bove benede 2. links rechts. 1rem=16px*/
+	border: 1px #ccc solid;
+	display:inline-block;
+	margin: 2rem 0 0;
+	border-radius:50px;
+	text-decoration: none;
+	color: #333;
+	transition: background 500ms ease;
+}
+
+.btn:hover {
+	background: #f4f4f4;
+}
+#header {
+	padding: 1.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	border: 1px groove;
+}
+
+#header h2 {
+	border-left: dotted 1px #fff;
+	border-right: dotted 1px #fff;
+	display:inline-block;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.caption {
+	padding: 0.8rem;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: auto;
+	color:#333;
+}
+
+footer h3 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+/*============================================================================================================================================== */
+/*===========================================================Media queries start line=========================================================== */
+/*============================================================================================================================================== */
+
+/* telefoon scherm__________________________________________________________________________________________________ */
+@media(max-width:835px) {
+	#navbar {
+		display: none;
+	}
+	#mobile-nav {
+		display: flex;
+		flex: 0 1 40vw; /*flex grow, flexshrink, width in viewport-widths*/
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		border-top: 1px solid #ccc;
+		position: fixed;
+		bottom:0;
+		left:0;
+		right:0;
+		background: #f2f2f2;
+	}
+	.mobile-nav-btn {
+		padding:10px 15px; /*1.bove benede 2. links rechts. 1rem=16px*/
+		border: 1px #ccc solid;
+		display: flex;
+		margin: 1rem;
+		border-radius: 10px;
+		text-decoration: none;
+		color: crimson;
+		transition:  500ms ease;
+		width: 24px;
+		height:24px;
+	}
+	.mobile-nav-btn:hover {
+		background-color: #C04C4D;
+		opacity: 0.8;
+	}
+	/*Mobile-large formaat.*/
+	@media(max-width:475px) {
+		.mobile-nav-btn {
+			padding:10px 15px; /*1.bove benede 2. links rechts. 1rem=16px*/
+			border: 1px #ccc solid;
+			display: flex;
+			margin: 1rem;
+			border-radius: 10px;
+			text-decoration: none;
+			color: crimson;
+			transition:  500ms ease;
+			width: 12px;
+			height:12px;
+		}
+	}
+	/* voor erg kleine telefoon schermen */
+	@media(max-width:375px) { 
+		.mobile-nav-btn {
+			padding:5px 7px; /*1.bove benede 2. links rechts. 1rem=16px*/
+			border: 1px #ccc solid;
+			display: flex;
+			margin: 1rem;
+			border-radius: 10px;
+			text-decoration: none;
+			color: crimson;
+			transition:  500ms ease;
+			width: 12px;
+			height:12px;
+		}
+	}
+}
+
+/* tablet schermen_______________________________________________________________________________________ */
+/* scherm groottes 500px and Up */
+@media(min-width:768px) {
+	#mobile-nav {
+		display: none;
+	}
+	#navbar {
+		display: flex;
+		flex: 0 1 40vw; /*flex grow, flexshrink, width in viewport-widths*/
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.nav-btn {
+		padding: 0.5rem 2rem; /*1.bove benede 2. links rechts. 1rem=16px*/
+		border: 1px #ccc solid;
+		display: flex;
+		margin: 1rem;
+		border-radius: 50px;
+		text-decoration: none;
+		color: #333;
+		transition:  500ms ease;
+	}
+	.nav-btn:hover {
+		background: #C04C4D;
+		font-weight: bold;
+	}
+
+	#landing {
+		display: flex;
+		height: 100%;
+	}
+
+	#landing-text {
+		height: 100vh;
+	}
+
+	landing-image {
+		height: 100vh;
+	}
+}
+
+/* Pc/Laptop schermen_____________________________________________________________________________________________ */
+/* scherm groottes 700px and Up */
+@media(min-width: 700px) {
+	.btn {
+		padding: 1rem 3rem;
+	}
+}

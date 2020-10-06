@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dashboard site, account gegevens">
+        <meta name="author" content="Emre Taskopru">
+	    <link rel="stylesheet" type="text/css" href="dashboard.css"/>
+	    <title> Easy-Drive | Dashboard </title>
+	</head>
+
+	<body>
+
+		<div class="header">
+			<a class="logo" href="home.html"><img class="logo" src="img/logo.png"></a>
+			<h1>Easy-Drive | Dashboard medewerker</h1>
+		</div>
+
+		<div id="navbar">
+			<ul>
+	     		<li><a href="home.html">Home</a></li>
+	     		<li><a href="rijlessen.html">Rijlessen</a></li>
+	     		<li><a href="over ons.html">Over ons</a></li>
+	     		<li><a href="contact.html">Contact</a></li>
+	     		<div class="nav-right"><li><a class="active" href="inlogpagina.html">Inloggen</a></li></div>
+	     	</ul>
+		</div>
+		<!-- BEGIN LINKER SIDEBAR PROFIEL -->
+		<div class="container">
+		    <content class="sidebar">
+		    	<h1>Mijn profiel:</h1>
+		    	<br><hr><br>
+		    	<img class="profile-picture" src="img/contactavatar.png" alt="profiel foto">
+		    	<h1>Ahmet_31</h1>
+		    	<br><hr><br>
+		    	<h2>Ahmet</h2><h2>Gotuboklu</h2><br><hr><br>
+		    	<h3>Leeftijd:</h3> <p>31 jaar</p>
+		    	<h3>Geslacht:</h3> <p>Man</p>
+		    	<h3>Geboorte datum:</h3> <p>3 Januari 1988</p>
+		    	<h3>Geboorteplaats:</h3><p>Rotterdam, Nederland</p>
+		    	<br><hr><br>
+		    	<h3>Adress:</h3><p>Corantijnstraat, Amsterdam</p>
+		    	<h3>Postcode:</h3><p>1058TC</p>
+		    	<h3>E-mail:</h3><p><a href="contact.html">A_Gotuboklu@outlook.com</a></p>
+		    	<h3>Telefoon-nummer:</h3><p>0657752631</p>
+		    	<br><hr><br>
+		    	<br><br><br><br><br><br><br><br><hr><br><h3>Account aangemaakt:</h3> <p>05/02/2015</p><br><br><br><br><br><br>
+		    </content>
+		    <!-- BEGIN LINKER PROFIEL SETTINGS GRID -->
+	    	<div class="main">
+	    		<h2>Profiel:</h2><hr><br>
+	    		<p>gebruikersnaam:</p> <input type="text" name="username" placeholder="AhmetGotuboklu31" disabled><br>
+	    		<p>Bijnaam:</p> <input type="text" name="nickname" placeholder="Ahmet_31" disabled><br>
+	    		<p>Profielfoto</p> <img class="dashboard-pf" src="img/contactavatar.png"><br>
+	    		<button onclick="edit()">Edit</button><br><!-- onclick hoeft niet te werken -->
+	    	</div>
+	    	<!-- ALLES DISABLED OMDAT HET NOG NIET HOEFT TE WERKEN EN PAS WERKT WANNEER JE EDIT -->
+	    	<div class="main">
+	    		<h2>Persoonlijke gegevens</h2><hr><br>
+	    		<p>Naam:</p> <input type="text" name="Fname" placeholder="Ahmet" disabled><br>
+	    		<p>AchterNaam:</p> <input type="text" name="Lname" placeholder="Gotuboklu" disabled><br>
+	    		<p>Geslacht:</p> <input type="text" name="gender" placeholder="Man" disabled>
+	    		<p>Geboortedatum:</p> <input type="text" name="birthdate" placeholder="03/01/1988" disabled><br>
+	    		<p>Geboorteplaats:</p> <input type="text" name="birthplace" placeholder="Rotterdam" disabled><br>
+	    		<p>E-Mail:</p> <input type="text" name="E-mail" placeholder="Ahmet_Gotuboklu@outlook.com" disabled><br>
+	    		<p>Telefoonnummer:</p> <input type="number" name="phonenumber" placeholder="0657752631" disabled><br>
+	    		<p>Adress:</p> <input type="text" name="adress" placeholder="Corantijnstraat" disabled><br>
+	    		<p>Postcode:</p> <input type="text" name="zipcode" placeholder="10531TC" disabled><br><br>
+	    		<button onclick="edit()">Edit</button><br>
+	    	</div>
+
+	    	<div class="main">
+	    		<h2>Mijn klanten</h2><hr><br>
+	    		<h3>Aantal klanten:</h3> <p> 4 leerlingen</p>
+	    		<h3>Klanten:</h3> <p>Emre Taskopru</p>
+	    		<p>Aysa Ask</p>
+	    		<p>Mustafa Dayaksever</p>
+	    		<p>Hasan Findik</p>
+	    	</div>
+
+	    	<div class="main">
+	    		<h2>Beschikbare voertuigen</h2><hr><br>
+	    		Klik <a href="voertuigenpagina.html">hier</a> om alle beschikbare voertuigen te bekijken!
+	    	</div>
+
+	    	<div class="main">
+	    		<h2>Betalings methode:</h2><hr><br>
+	    		<h3>Bank:</h3><p>ABN AMRO</p>
+	    		<h3>Kaartnummer: ABN31 578 367 TC 31</h3>
+	    	</div>
+	</div>
+		<footer>
+	    	<p>&copy; 2019 Easy-Drive. All Rights Reserved. </p>
+	    	<a href="contact.html" target="_blank">Heeft u een probleem? Klik dan hier om contact op te nemen.</a>
+	    	<div class="social-container">
+    			
+    			<a class="social-media" href="https://twitter.com/" target="_blank"><img class="social-media" src="img/twitter-icon.png" alt="Twitter"></a>
+    			
+    			<a class="social-media" href="https://facebook.com/" target="_blank"><img class="social-media" src="img/fb-icon.png" alt="Facebook"></a>
+
+    			<a class="social-media" href="https://instagram.com/" target="_blank"><img class="social-media" src="img/instagram-icon.png" alt="Instagram"></a>
+    		</div>
+		</footer>
+
+	</body>
+</html>

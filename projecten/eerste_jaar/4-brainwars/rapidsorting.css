@@ -1,0 +1,231 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background-color: white;
+    font-family:Arial;
+    font-size: 16px;
+    min-width:100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*======================================================HEADER==========================================*/
+.header {
+    background-color: #EDF0FF;
+    height: 140px;
+    position: relative;
+    border-radius: 5px;
+    clear: both;
+    display: flex;
+    text-align: center;
+}
+.title {
+    color: #53a7ed;
+    font-size: 400%;
+    text-shadow: 2px 2px #2f81c4;
+    text-align: center;
+    display: inline-flex;
+    margin: auto;
+    text-decoration: none;
+
+}
+.logo {
+    height: 140px;
+    width: 200px;
+    float: left;
+    display: inline-flex;
+    align-self: flex-start;
+    position: absolute;
+}
+/*======================================================NAVBAR==========================================*/
+#navbar {
+    height: 45px;
+    position: relative;
+    clear: both;
+    background-color: #DBE1FC;
+}
+.broodkruimel {
+    padding: 10px;
+}
+/*======================================================BODY==========================================*/
+.home-main {
+    background-color: #dbe1fc;
+    margin:10px;
+    position: static;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 110%;
+    display: inline-block;
+    clear: right;
+    width:65%;
+    text-align:left;
+}
+
+#HomeFoto {
+    float:left;
+    position: relative;
+    margin: 10px;
+    clear: left;
+    width:30%;
+    opacity: 1.0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 5px;
+}
+#HomeFoto:hover {
+    opacity: 0.5;
+}
+h1 {
+    color:#53a7ed;
+}
+.main-list {
+    list-style-type:disc;
+    margin:10px;
+    padding:px;
+}
+.main-list li {
+    padding:2px;
+}
+a {
+    color:#5856e2
+}
+/*======================================================FOOTER==========================================*/
+footer {
+background-color: #DBE1FC;
+color: black;
+height: 100px;
+bottom: 0;
+clear: both;
+border-radius: 5px;
+font-size: 90%;
+padding: 15px;
+text-align: center;
+overflow: hidden;
+}   
+footer a {
+    color:#5856e2;
+}
+.social-media {
+    height:60px;
+    width:60px;
+    margin:5px;
+}
+.social-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+/*=======================Spellen pagina=================*/
+/* Center website */
+.projecten-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content:center;
+    text-align: center;
+}
+.projecten {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+    display:flex;
+    align-items:baseline;
+}
+
+/* voeg padding tussen elke column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* maak 4 even grote columns die naast elkaar floaten. */
+.column {
+    float: left;
+    width: 33%;
+}
+
+/* Clear floats achter/na rijen */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+ .gamefotos {
+    width:100%;
+    border-radius: 25px;
+ }
+
+/* Responsive layout - maakt een 2 column layout inplaats van 4 */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - zorgt ervoor dat columns op elkaar stacken inplaats van naast elkaar. */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.active {
+    font-weight:bold;
+    border:1px solid;
+    text-decoration: underline;
+}
+/*body met afbeelidnegn en startkmop etc etc*/
+#rapidsorting {
+    margin-right: 560px;
+    margin-left: 550px;
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 25px;
+}
+/*afbeelding van beginpagina rapid sorting*/
+#afbeeldingrs{
+    border-radius: 25px;
+}
+#uitleg{
+    margin-top: 10px;
+    margin-left: 475px;
+    margin-bottom: 10px;
+}
+/*button*/
+.button {
+  margin-left: 620px;
+  margin-bottom: 10px;
+  background-color: #4286f4; /* blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

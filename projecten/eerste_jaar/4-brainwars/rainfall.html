@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="img/bwlogo.png">
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Spellen pagina">
+        <meta name="author" content="Emre Taskopru">
+	    <link rel="stylesheet" type="text/css" href="rainfall.css"/>
+		<title>Brain Wars | Spellen</title>
+	</head>
+	<body>
+		<div class="header">	
+			<a class="logo" href="index.html"><img class="logo" src="img/bwlogo.png"></a>
+			<a class="title" href="index.html"><h1>Brain Wars | Spellen</h1></a>
+		</div>
+
+		<div id="navbar">
+			<div class="broodkruimel"><a href="index.html">Spellen</a> / Rainfall</div>
+		</div>
+			<div id="timercont"></div>
+		<div class="gamecont">
+			<table id="spelbord">
+				<tr>
+					<td id="kolom1r1"></td>
+					<td id="kolom2r1"></td>
+					<td id="kolom3r1"></td>
+				</tr>				
+				<tr>
+					<td id="kolom1r2"></td>
+					<td id="kolom2r2"></td>
+					<td id="kolom3r2"></td>
+				</tr>				
+				<tr>
+					<td id="kolom1r3"></td>
+					<td id="kolom2r3"></td>
+					<td id="kolom3r3"></td>
+				</tr>				
+				<tr>
+					<td id="zet-vak1" onclick="zet1()"><img onclick="zet1()" class='paraplufoto' id="parp1" src='img/paraplu.png'></td>
+
+					<td id="zet-vak2" onclick="zet2()"><img class='paraplufoto' id="parp2" src='img/paraplu.png'></td>
+
+					<td id="zet-vak3" onclick="zet3()"><img class='paraplufoto' id="parp3" src='img/paraplu.png'></td>
+				</tr>				
+			</table>
+		</div>
+		<button onclick="timer()">Start spel</button>
+		<footer>
+	    	<p>&copy; 2019 Brain Wars | All Rights Reserved. </p>
+	    	<a href="contact.html" target="_blank">Heeft u een probleem? Klik dan hier om contact op te nemen.</a>
+	    	<div class="social-container"> <!-- container voor social media-->
+	    		<a class="social-media" href="https://www.facebook.com/brainwars/" target="_blank"><img class="social-media" src="img/fb-icon.png" alt="Facebook"></a>
+
+	    		<a class="social-media" href="https://twitter.com/E_Taskopru?lang=nl" target="_blank"><img class="social-media" src="img/twitter-icon.png" alt="Twitter"></a>
+	    		
+	    		<a class="social-media" href="https://www.instagram.com/?hl=nl" target="_blank"><img class="social-media" src="img/insta-icon.png" alt="Instagram"></a>
+	    	</div>
+		</footer>
+		<script type="text/javascript">
+			//variabelen vak
+
+				var img1 = document.getElementById('parp1');
+				var img2 = document.getElementById('parp2');
+				var img3 = document.getElementById('parp3');
+
+
+			//zetvakken voor de paraplu
+			function zet1() {
+				
+				document.getElementByClass('img1').style.visibility=visible;
+			}
+
+			function zet2() {
+				document.getElementById('zet-vak2').innerHTML= "<img class='paraplufoto' src='img/paraplu.png'>"
+			}
+
+			function zet3() {
+				document.getElementById('zet-vak3').innerHTML= "<img class='paraplufoto' src='img/paraplu.png'>"
+			}
+
+			function timer() {
+				interval = setInterval(toonGetal, 1000);
+				timeout = setTimeout(toonText, 30000);
+
+				document.getElementById('timercont').innerHTML = interval;
+			}
+
+		</script>
+	</body>
+</html>

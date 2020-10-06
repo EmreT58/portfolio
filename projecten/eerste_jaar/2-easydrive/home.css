@@ -1,0 +1,281 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	background-color: white;
+	font-family:Arial;
+	font-size: 16px;
+	min-width:100%;
+}
+.website-wrapper {
+	width:95%;
+    margin:0 auto;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	color:#0191FB;
+}
+/*===============HEADER=============*/
+.header {
+  background-color: #f2f2f2;
+  height: 150px;
+  right: 0;
+  left: 0;
+  top: 0;
+  font-family: Arial;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: outset;
+  clear: both;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+h1 {
+  color:#0191FB;
+  font-size: 320%;
+    text-shadow: 2px 2px lightgrey;
+    align-self: center;
+}
+.logo {
+  width:100px;
+  height:100px;
+  margin:10px;
+  float:left;
+}
+/*============NAVBAR==========*/
+#navbar {
+	margin: 10px;
+	height: 45px;
+	position: static;
+	top: 110px;
+	clear: both;
+	border-bottom:4px solid black;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
+	border-radius: 5px;
+	text-align: center;
+	border-style: outset;
+}
+
+#navbar li {
+	display: inline;
+	text-align: center;
+}
+
+#navbar li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #0084e2;
+  text-decoration:underline;
+}
+.nav-right {
+	float:right;
+}
+.active {
+    background-color: #0191FB;
+    font-weight:bold;
+ }
+/*=================Body=============*/
+.main {
+	background-color: #f2f2f2;
+	margin:10px;
+	border-radius: 5px;
+	width:69%;
+	padding: 10px;
+	font-size: 110%;
+	display: inline-block;
+	border-style: outset;
+	text-align: left;
+  float:right;
+}
+.homefoto {
+  width:25%;
+  height:25%;
+  margin:10px;
+}
+.geslaagd {
+	height: 300px;
+	width: 400px;
+	border-radius: 5px;
+	transition: 0.3s ease-in-out;
+}
+.geslaagd:hover {
+	opacity: 0.5;
+}
+/*======timeline====*/
+
+/* De tijdlijn */
+.timeline {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	border-style: outset;
+  position: relative;
+	max-width: 100%;
+	margin:10px;
+  top:100px;
+}
+
+/* De tijdlijn */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* container om de content heen */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* De cirkels op de tijdlijn */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #0191FB;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Plaats de container links */
+.left {
+  left: 0;
+}
+
+/* Plaats de container rechts */
+.right {
+  left: 50%;
+}
+
+/* pijltjes naar rechts voor de linker containers */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* pijltjes naar links voor de rechter containers */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix de cirkel voor de containers aan de rechter kant */
+.right::after {
+  left: -16px;
+}
+
+/* de content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive tijdlijn op scherm minder dan 600px breed */
+@media screen and (max-width: 600px) {
+  /* plaats de tijdlijn links */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* volle-breedte containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* alle pijltjes 100% naar links */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* alle cirkels 100% zelfde plek */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Alle rechter containers net als linker laten werken */
+  .right {
+  left: 0%;
+  }
+}
+/*=============FOOTER==============*/
+footer {
+	background-color: #f2f2f2;
+	color: black;
+	height: 100px;
+	position: relative;
+	bottom: 0px;
+	margin: 10px;
+	border-radius: 5px;
+	border-style: outset;
+	clear: both;
+	font-size: 90%;
+	padding: 15px;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+}
+.social-media {
+	height:60px;
+	width:60px;
+	margin:5px;
+	transition: ease-in-out 0.3s
+}
+.social-media:hover {
+	opacity: 0.5;
+}
+.social-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}

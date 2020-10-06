@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samsing Tablet</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="website-wrapper">
+
+        <body>
+            <header>
+                <div id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tabletkiezer.html" class="active">Tabletkiezer</a></li>
+                        <li><a href="overons.html">Over ons</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>  
+                
+            </header>
+            <div class="broodkruimel"><a href="tabletkiezer.html">Tabletkiezer</a> / Samsing</div>
+            <main>
+                <content class="tablet-titel">
+                    <h2>Samsing Tablet</h2>
+                </content>
+                <content >
+                    <div class="product-detail">
+                        <img src="img/samsung zwart 7.jpg" alt="Een tablet van het merk Samsing">
+                        <div class="bestel-tablet">
+                            <span class="Prijs"> €399,-</span> 
+                            <form>
+                                <input type="button" value="Bestel hier" onclick="window.location.href='https://www.mediamarkt.nl/'" />
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="product-description-detail">
+                        <table class="product-table">
+                            <tr>
+                                <th>Schermdiagonaal</th>
+                                <td>10.1 inch</td>
+                            </tr>
+                            <tr>
+                                <th>Besturingssysteem</th>
+                                <td>Android</td>
+                            </tr>
+                            <tr>
+                                <th>Draadloze verbinding</th>
+                                <td>Bluethooth Wifi</td>
+                            </tr>
+                            <tr>
+                                <th>Opslagcapaciteit</th>
+                                <td>16GB</td>
+                            </tr>
+                            <tr>
+                                <th>RAM-geheugen</th>
+                                <td> 2 GB</td>
+                            </tr>
+                       
+                        </table>
+                        <div class="product-description">
+                           Voor je dagelijkse dosis digitale entertainment grijp je naar de de Samsung Galaxy Tab A 10,1. 
+                           Zet thuis je favoriete series en games op de tablet en vermaak jezelf onderweg naar kantoor of 
+                           de collegezaal. Eenmaal aangekomen houd je eenvoudig je aantekeningen bij met een handige app. 
+                           Aan het einde van de dag check je nog even de tv gids voordat je op de bank in slaap valt.
+                        </div>
+                    </div>
+                    
+                </content>
+            </main>
+        <footer>
+
+            <p>&copy; 2018 Tablet4You. All Rights Reserved. </p>
+            <a href="contact.html" target="_blank">Heeft u een probleem? Klik dan hier om contact op te nemen.</a>
+            
+        </footer>
+            
+            <script type="text/javascript" >
+                function orderProduct(){
+                    var productAantal = sessionStorage.getItem('productAantal');
+                    if(productAantal== null){
+                        productAantal = 0;
+                    }
+                    
+                    productAantal = parseInt(productAantal) + 1;
+                    sessionStorage.setItem('productAantal',  productAantal);
+                    console.log(productAantal);
+                    document.getElementById('winkelmand').innerHTML = productAantal;
+                   
+                    
+                }
+                
+                function clearBasket(){
+                    sessionStorage.removeItem('productAantal');
+                    document.getElementById('winkelmand').innerHTML = 0;
+                }
+            </script>
+        </body>
+    </div>
+</html>
